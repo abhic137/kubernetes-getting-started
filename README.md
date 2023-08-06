@@ -27,3 +27,5 @@ ex: kubectl run nginx --image ngnix
 
 running with yaml file:
 ex: kubectl create -f nginx.yaml
+
+
