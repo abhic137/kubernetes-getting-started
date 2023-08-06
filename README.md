@@ -22,3 +22,8 @@ we can replecate pod services to scalee the application horizontaly
 replica set: set of identical pods 
 deployments: provides updates for pods and replica sets
 
+Kubectl CLI:
+ex: kubectl run nginx --image ngnix
+
+running with yaml file:
+ex: kubectl create -f nginx.yaml
