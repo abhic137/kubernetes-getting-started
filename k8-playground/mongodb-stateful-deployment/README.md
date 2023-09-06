@@ -147,3 +147,11 @@ Here are some common MongoDB commands you can run once connected:
 Remember to replace mydb and mycollection with the actual database and collection names you are working with.
 
 This approach allows you to access and interact with MongoDB in your Kubernetes cluster using a MongoDB client from your local machine.
+Step 6: Access the Web Application
+
+At this point, the web application is running within your Kubernetes cluster. However, to access it from your local machine, you might need to use port forwarding. Run this command to forward traffic from your local port 8080 to the Service:
+
+bash
+Copy code
+kubectl port-forward service/webapp-service 8080:80
+Now, you can open a web browser and visit http://localhost:8080 to see the Nginx welcome page.
