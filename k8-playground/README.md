@@ -52,3 +52,8 @@ kubectl describe <POD_NAME>
 kubectl logs <POD_NAME>
 
 ```
+to get inside the pod
+```
+kubectl get pods
+kubectl exec -it <pod_name> --bin/bash
+```
