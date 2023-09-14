@@ -595,4 +595,7 @@ Proxy 	In computing, a proxy is a server that acts as an intermediary for a remo
 ReplicaSet 	A ReplicaSet (aims to) maintain a set of replica Pods running at any given time.
 Workload 	A workload is an application running on Kubernetes.
 
-
+kubernets YAML file has 3
+1) meta data
+2) specifications
+3) status
