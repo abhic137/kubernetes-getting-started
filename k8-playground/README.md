@@ -36,3 +36,15 @@ to delete service
 ```
 kubectl delete service <service_name>
 ```
+To create deployment in cmd
+```
+kubectl create deployment <deployment_name> --image=<IMAGE _NAME>
+
+```
+To get Logs and Debugging
+```
+kubectl get pods
+kubectl describe <POD_NAME>
+kubectl logs <POD_NAME>
+
+```
