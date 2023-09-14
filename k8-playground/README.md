@@ -50,10 +50,16 @@ To get Logs and Debugging
 kubectl get pods
 kubectl describe <POD_NAME>
 kubectl logs <POD_NAME>
+kubectl describe service <Service_name>
+kubectl describe deployment <Deployment_name>
 
 ```
 to get inside the pod
 ```
 kubectl get pods
 kubectl exec -it <pod_name> --bin/bash
+```
+to view the running status of the deployment
+```
+kubectl describe deployment <deployment_name> -o yaml > <NAME_OF_THE FILE>.yaml
 ```
