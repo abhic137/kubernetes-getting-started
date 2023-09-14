@@ -32,6 +32,10 @@ to get the services info
 ```
 kubectl get svc   # kubectl get service
 ```
+To get replicasets
+```
+kubectl get replicasets
+```
 to delete service
 ```
 kubectl delete service <service_name>
