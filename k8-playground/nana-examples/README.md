@@ -98,5 +98,12 @@ kubectl create namespace <NAME_OF THE NAMESPACE>
 ```
 we can also create with name space config file.
 
-
-
+normally it takes default namespace.after creating a name space we can apply the config map with the namespace.
+to get services which use this namespace
+```
+kubectl get all -n my-namespace
+```
+applying a configmap with perticular namespace
+```
+kubectl apply -f mysql-configmap.yaml --namespace=my-namespace
+```
