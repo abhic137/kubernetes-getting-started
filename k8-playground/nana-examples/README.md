@@ -79,6 +79,12 @@ minikube service <name_of _the _service>
 ```
 
 ## namespaces concept
+
+*namespaces in k8's provide isolation. 
+*we can use it in blue/green deployment
+*sharing services between diffrent environments
+*2 teams can work on the project without disrupting each others work flow
+*we can limit the CPU,RAM, Storage as per the name space requirement
 ```
 kubectl get namespace
 ```
