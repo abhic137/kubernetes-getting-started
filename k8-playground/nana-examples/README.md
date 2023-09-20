@@ -117,3 +117,20 @@ changes the active namespace to this
 ```
 kubens <namespace>
 ```
+## Ingress concepts
+install ingress in minikube
+it starts the k8's Nginx implementation of Ingress controller
+```
+minikube addons enable ingress
+```
+to view the ingress controller
+```
+kubectl get pod -n kube-system
+```
+create ingress rules
+to create a ingress rule so that the kubernetes-dashboard will be accesseble from the outside browser
+```
+kubectl get ns
+```
+
+
