@@ -162,4 +162,21 @@ apply the file
 ```
 kubectl apply -f dashboard-ingress.yaml
 ```
+## helm definitation
+its a package manager, bunch of yaml files together is called as a helm chart. helm repo can store the entire application.
+its other functionality is templating engine.
+
+helm directory structure :
+```
+mychart/   # toplevel name of the chart
+ Chart.yaml  # chart.yaml meta info about the chart
+ values.yaml  # values for the template files
+ charts/    # folder for chart dependencies
+ templates/ # TEMPLATES FOLDER
+ ...
+```
+to install helm charts
+```
+helm install <chartname>
+```
 
