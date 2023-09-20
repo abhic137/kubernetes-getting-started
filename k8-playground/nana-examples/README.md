@@ -132,5 +132,34 @@ to create a ingress rule so that the kubernetes-dashboard will be accesseble fro
 ```
 kubectl get ns
 ```
+to get all the info about that namespace
+```
+kubectl get all -n kubernetes-dashboard
 
+```
+```
+coreslice@coreslice:~/k8-playground/nana-examples$ kubectl get all -n kubernetes-dashboard
+NAME                                             READY   STATUS    RESTARTS     AGE
+pod/dashboard-metrics-scraper-5dd9cbfd69-qw54f   1/1     Running   2 (6d ago)   15d
+pod/kubernetes-dashboard-5c5cfc8747-t4p67        1/1     Running   4 (6d ago)   15d
+
+NAME                                TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE
+service/dashboard-metrics-scraper   ClusterIP   10.110.128.193   <none>        8000/TCP   15d
+service/kubernetes-dashboard        ClusterIP   10.105.64.206    <none>        80/TCP     15d
+
+NAME                                        READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/dashboard-metrics-scraper   1/1     1            1           15d
+deployment.apps/kubernetes-dashboard        1/1     1            1           15d
+
+NAME                                                   DESIRED   CURRENT   READY   AGE
+replicaset.apps/dashboard-metrics-scraper-5dd9cbfd69   1         1         1       15d
+replicaset.apps/kubernetes-dashboard-5c5cfc8747        1         1         1       15d
+
+```
+
+create a ingress file.
+apply the file
+```
+kubectl apply -f dashboard-ingress.yaml
+```
 
