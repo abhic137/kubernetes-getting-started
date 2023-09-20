@@ -77,3 +77,20 @@ we have to use this minikube command
 ```
 minikube service <name_of _the _service>
 ```
+
+## namespaces concept
+```
+kubectl get namespace
+```
+```
+kubectl cluster-info
+```
+
+to create a name space
+```
+kubectl create namespace <NAME_OF THE NAMESPACE>
+```
+we can also create with name space config file.
+
+
+
