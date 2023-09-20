@@ -107,3 +107,13 @@ applying a configmap with perticular namespace
 ```
 kubectl apply -f mysql-configmap.yaml --namespace=my-namespace
 ```
+```OR```
+we can directly mention the namespace: <namespacename> in the config map config file under the metadata tag.
+A tool can be used which directly uses a perticular namespace if we want to deploy a service. it is ```kubens```
+```
+kubens
+```
+changes the active namespace to this
+```
+kubens <namespace>
+```
